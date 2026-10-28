@@ -1,0 +1,8 @@
+{
+ "generated_utc": "2026-10-28T11:30:22+00:00",
+ "engine": "PLACEHOLDER rule-based (Jev NOT CONNECTED)",
+ "rules": "buyer_growth>=1.5, liquidity>=10% of mcap, 1h buys>sells; best buyer_growth wins",
+ "considered": 0,
+ "pick": null,
+ "verdict": "NO (nothing passed)"
+}

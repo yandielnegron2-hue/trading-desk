@@ -1,0 +1,14 @@
+{
+ "generated_utc": "2026-10-28T11:30:22+00:00",
+ "meme_dial": 0.75,
+ "api_calls": 8,
+ "pools_seen": 160,
+ "oldest_pool_age_h": {
+  "solana": 0.1,
+  "bsc": 0.6
+ },
+ "errors": [],
+ "candidates": [],
+ "handed_on": [],
+ "note": "handed to judge; coverage limited to the newest ~80 pools per chain (GeckoTerminal new_pools pages 1-4)"
+}

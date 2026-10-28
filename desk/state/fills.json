@@ -1,0 +1,15 @@
+{
+ "generated_utc": "2026-10-28T11:32:21+00:00",
+ "mode": "DRY-RUN",
+ "intents": [
+  {
+   "venue": "alpaca-paper",
+   "symbol": "TQQQ",
+   "target_weight": 0.35,
+   "side": "buy",
+   "notional": 35000.0,
+   "status": "DRY-RUN intent"
+  }
+ ],
+ "note": "paper trading needs ALPACA_KEY+ALPACA_SECRET AND DESK_PAPER_TRADE=1; live endpoint is hard-refused"
+}

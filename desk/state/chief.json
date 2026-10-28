@@ -1,0 +1,19 @@
+{
+ "generated_utc": "2026-10-28T11:29:36+00:00",
+ "tools": {
+  "alpaca_paper": "OK (ACTIVE)",
+  "geckoterminal": "OK",
+  "sec_edgar": "OK",
+  "fomo_filterTokens": "NOT CONNECTED (no FOMO_FILTER_URL; no public filterTokens endpoint known)",
+  "quantgpt": "NOT CONNECTED",
+  "jev": "NOT CONNECTED",
+  "telegram": "NOT CONNECTED (report printed + saved to file only)"
+ },
+ "dial_ok": true,
+ "dial_note": "dial age 0.3h",
+ "dials": {
+  "meme": 0.75,
+  "stocks": 0.75,
+  "crypto": 0.66
+ }
+}

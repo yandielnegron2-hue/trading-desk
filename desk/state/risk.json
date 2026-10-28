@@ -1,0 +1,15 @@
+{
+ "generated_utc": "2026-10-28T11:32:21+00:00",
+ "kill": null,
+ "rules": [
+  "stocks: exit/trim to dial 0.75 (dial 0 = flatten all stock names)",
+  "crypto: exit/trim to dial 0.66 x momentum targets (current target {'CASH': 1.0})",
+  "memes: dial 0.75; exit any meme when 1h volume < 25% of its 24h hourly average (no meme positions held - FOMO not connected)"
+ ],
+ "account": {
+  "equity": 100000.0,
+  "last_equity": 100000.0,
+  "day_change_pct": 0.0
+ },
+ "rule_4pct": "paper account -4% day drawdown -> cancel orders, flatten, desk halts"
+}

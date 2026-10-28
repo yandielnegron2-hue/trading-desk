@@ -1,0 +1,11 @@
+{
+ "generated_utc": "2026-10-28T11:32:21+00:00",
+ "qqq_close": 721.25,
+ "as_of": "2026-10-27",
+ "sma200": 678.23,
+ "enter_above": 685.01,
+ "exit_below": 657.88,
+ "regime": "IN",
+ "reason": "above +1% band",
+ "target": "TQQQ"
+}

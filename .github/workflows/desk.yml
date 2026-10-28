@@ -1,0 +1,31 @@
+name: desk
+on:
+  schedule: [{cron: "0 10 * * *"}]
+  workflow_dispatch:
+permissions: {contents: write, pages: write, id-token: write}
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    environment: {name: github-pages}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install pandas requests
+      - run: sudo mkdir -p /workspace && sudo ln -s $GITHUB_WORKSPACE/risk-dial /workspace/risk-dial && sudo ln -s $GITHUB_WORKSPACE/desk /workspace/desk
+      - env:
+          ALPACA_KEY: ${{ secrets.ALPACA_KEY }}
+          ALPACA_SECRET: ${{ secrets.ALPACA_SECRET }}
+          ALPACA_PAPER: "1"
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: |
+          python risk-dial/dial.py
+          cd desk && python desk.py all && python send_telegram.py
+      - run: python build_dashboard.py
+      - run: |
+          git config user.name desk-bot && git config user.email desk-bot@users.noreply.github.com
+          git add -A risk-dial desk/state && git commit -m "desk run $(date -u +%F)" && git push || true
+      - uses: actions/upload-pages-artifact@v3
+        with: {path: site}
+      - uses: actions/deploy-pages@v4
