@@ -1,23 +1,8 @@
 {
- "generated_utc": "2026-10-28T11:57:28+00:00",
+ "generated_utc": "2026-10-28T12:12:28+00:00",
  "engine": "PLACEHOLDER rule-based (Jev NOT CONNECTED)",
  "rules": "buyer_growth>=1.5, liquidity>=10% of mcap, 1h buys>sells; best buyer_growth wins",
- "considered": 1,
- "pick": {
-  "network": "bsc",
-  "pool": "0xee6b6d5ec84d33e10abcf618cb6001b5797e36ac",
-  "name": "PAND / WBNB",
-  "dex": "pancakeswap_v2",
-  "age_h": 0.3,
-  "liquidity_usd": 36848,
-  "vol24_usd": 163757,
-  "mcap_usd": 129406,
-  "mcap_source": "fdv (mcap null)",
-  "h1_buys": 302,
-  "h1_sells": 200,
-  "buyer_growth": 6.0,
-  "txn_growth": 6.0,
-  "url": "https://www.geckoterminal.com/bsc/pools/0xee6b6d5ec84d33e10abcf618cb6001b5797e36ac"
- },
- "verdict": "YES"
+ "considered": 0,
+ "pick": null,
+ "verdict": "NO (nothing passed)"
 }

@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-10-28T11:56:34+00:00",
+ "generated_utc": "2026-10-28T12:11:36+00:00",
  "tools": {
   "alpaca_paper": "OK (ACTIVE)",
   "geckoterminal": "OK",
@@ -7,7 +7,7 @@
   "fomo_filterTokens": "NOT CONNECTED (no FOMO_FILTER_URL; no public filterTokens endpoint known)",
   "quantgpt": "NOT CONNECTED",
   "jev": "NOT CONNECTED",
-  "telegram": "NOT CONNECTED (report printed + saved to file only)"
+  "telegram": "OK"
  },
  "dial_ok": true,
  "dial_note": "dial age 0.0h",

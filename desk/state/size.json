@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-10-28T11:59:24+00:00",
+ "generated_utc": "2026-10-28T12:14:09+00:00",
  "dials": {
   "meme": 0.75,
   "stocks": 0.75,
@@ -9,7 +9,7 @@
  "meme": {
   "ticket_pct_of_bank": 4.5,
   "bank_usd": null,
-  "pick": "PAND / WBNB",
+  "pick": null,
   "ticket_usd": null,
   "note": "MEME_BANK_USD not set (FOMO not connected) - % only"
  },

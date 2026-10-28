@@ -1,11 +1,16 @@
 {
- "generated_utc": "2026-10-28T11:59:23+00:00",
+ "generated_utc": "2026-10-28T12:14:08+00:00",
  "insider_buying": {
   "source": "SEC EDGAR Form 4 (daily index + raw filings)",
   "rule": ">=3 distinct insiders, code P, >$500k, last 30 days",
-  "coverage": "1199/18769 Form 4 filings parsed (6%); +400 this run; fills in over successive runs",
+  "coverage": "1599/18769 Form 4 filings parsed (9%); +400 this run; fills in over successive runs",
   "complete": false,
   "list": [
+   {
+    "symbol": "RENT",
+    "insiders": 3,
+    "open_market_buys_usd": 21615087
+   },
    {
     "symbol": "NPB",
     "insiders": 3,
@@ -14,7 +19,7 @@
    {
     "symbol": "STC",
     "insiders": 5,
-    "open_market_buys_usd": 638230
+    "open_market_buys_usd": 921940
    }
   ]
  },
