@@ -1,14 +1,50 @@
 {
- "generated_utc": "2026-10-28T11:30:22+00:00",
+ "generated_utc": "2026-10-28T11:57:28+00:00",
  "meme_dial": 0.75,
  "api_calls": 8,
- "pools_seen": 160,
+ "pools_seen": 140,
  "oldest_pool_age_h": {
   "solana": 0.1,
-  "bsc": 0.6
+  "bsc": 0.3
  },
- "errors": [],
- "candidates": [],
- "handed_on": [],
+ "errors": [
+  "bsc p2: curl: (22) The requested URL returned error: 429"
+ ],
+ "candidates": [
+  {
+   "network": "bsc",
+   "pool": "0xee6b6d5ec84d33e10abcf618cb6001b5797e36ac",
+   "name": "PAND / WBNB",
+   "dex": "pancakeswap_v2",
+   "age_h": 0.3,
+   "liquidity_usd": 36848,
+   "vol24_usd": 163757,
+   "mcap_usd": 129406,
+   "mcap_source": "fdv (mcap null)",
+   "h1_buys": 302,
+   "h1_sells": 200,
+   "buyer_growth": 6.0,
+   "txn_growth": 6.0,
+   "url": "https://www.geckoterminal.com/bsc/pools/0xee6b6d5ec84d33e10abcf618cb6001b5797e36ac"
+  }
+ ],
+ "handed_on": [
+  {
+   "network": "bsc",
+   "pool": "0xee6b6d5ec84d33e10abcf618cb6001b5797e36ac",
+   "name": "PAND / WBNB",
+   "dex": "pancakeswap_v2",
+   "age_h": 0.3,
+   "liquidity_usd": 36848,
+   "vol24_usd": 163757,
+   "mcap_usd": 129406,
+   "mcap_source": "fdv (mcap null)",
+   "h1_buys": 302,
+   "h1_sells": 200,
+   "buyer_growth": 6.0,
+   "txn_growth": 6.0,
+   "url": "https://www.geckoterminal.com/bsc/pools/0xee6b6d5ec84d33e10abcf618cb6001b5797e36ac"
+  }
+ ],
  "note": "handed to judge; coverage limited to the newest ~80 pools per chain (GeckoTerminal new_pools pages 1-4)"
 }

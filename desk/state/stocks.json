@@ -1,9 +1,9 @@
 {
- "generated_utc": "2026-10-28T11:32:20+00:00",
+ "generated_utc": "2026-10-28T11:59:23+00:00",
  "insider_buying": {
   "source": "SEC EDGAR Form 4 (daily index + raw filings)",
   "rule": ">=3 distinct insiders, code P, >$500k, last 30 days",
-  "coverage": "800/18769 Form 4 filings parsed (4%); +400 this run; fills in over successive runs",
+  "coverage": "1199/18769 Form 4 filings parsed (6%); +400 this run; fills in over successive runs",
   "complete": false,
   "list": [
    {
@@ -13,8 +13,8 @@
    },
    {
     "symbol": "STC",
-    "insiders": 4,
-    "open_market_buys_usd": 544590
+    "insiders": 5,
+    "open_market_buys_usd": 638230
    }
   ]
  },
