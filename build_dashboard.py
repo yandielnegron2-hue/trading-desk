@@ -26,4 +26,21 @@ page=f'''<!doctype html><html><head><meta charset=utf-8><meta name=viewport cont
 <div class="panel"><b>DESK REPORT</b><pre>{html.escape(rep)}</pre></div>
 <script>const P={json.dumps(pts)};new Chart(document.getElementById('c'),{{type:'line',data:{{labels:P.map(p=>p[0]),datasets:['meme','stocks','crypto'].map((k,i)=>({{label:k,data:P.map(p=>p[1][k]),borderColor:['#ff5fb0','#3ee07a','#4da3ff'][i]}}))}},options:{{scales:{{y:{{min:0,max:1}}}}}}}});</script>
 </body></html>'''
-os.makedirs('site',exist_ok=True);open('site/index.html','w').write(page);print('built')
+os.makedirs('site',exist_ok=True);open('site/simple.html','w').write(page)
+import urllib.request
+def ap(path):
+    k,sc=os.environ.get('ALPACA_KEY'),os.environ.get('ALPACA_SECRET')
+    if not k or not sc: return None
+    try:
+        r=urllib.request.Request('https://paper-api.alpaca.markets/v2/'+path,headers={'APCA-API-KEY-ID':k,'APCA-API-SECRET-KEY':sc})
+        return json.load(urllib.request.urlopen(r,timeout=20))
+    except Exception: return None
+acc=ap('account') or {}; pos=ap('positions') or []
+f=lambda x:float(x) if x not in (None,'') else None
+eq,le=f(acc.get('equity')),f(acc.get('last_equity'))
+dp=eq-le if eq is not None and le is not None else None
+DD={'equity':eq,'last_equity':le,'day_pnl':dp,'day_pnl_pct':(dp/le*100 if dp is not None and le else None),
+ 'positions':[{'symbol':x.get('symbol'),'qty':f(x.get('qty')),'market_value':f(x.get('market_value')),'unrealized_pl':f(x.get('unrealized_pl'))} for x in pos],
+ 'dials':d,'report_text':rep,'updated_utc':dial.get('generated_utc')}
+t=open('terminal_template.html').read().replace('<!--DESK_DATA-->','<script>window.DESK_DATA='+json.dumps(DD).replace('</','<\\/')+'</script>',1)
+open('site/index.html','w').write(t);print('built',eq)
