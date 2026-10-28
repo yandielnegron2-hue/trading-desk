@@ -20,7 +20,7 @@ def run():
     else: t["fomo_filterTokens"] = "NOT CONNECTED (no FOMO_FILTER_URL; no public filterTokens endpoint known)"
     t["quantgpt"] = "NOT CONNECTED" + (" (QUANTGPT_KEY set but no client implemented)" if os.environ.get("QUANTGPT_KEY") else "")
     t["jev"] = "NOT CONNECTED" + (" (JEV_KEY set but no client implemented)" if os.environ.get("JEV_KEY") else "")
-    t["telegram"] = "NOT CONNECTED (report printed + saved to file only)"
+    t["telegram"] = "OK" if os.environ.get("TELEGRAM_CHAT_ID") else "NOT CONNECTED (report printed + saved to file only)"
     d, why = dial()
     return save("chief", {"tools": t, "dial_ok": d is not None, "dial_note": why,
                           "dials": {k: v["dial"] for k, v in d["dials"].items()} if d else None})
