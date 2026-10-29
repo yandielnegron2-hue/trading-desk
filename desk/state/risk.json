@@ -1,10 +1,10 @@
 {
- "generated_utc": "2026-10-28T12:14:09+00:00",
+ "generated_utc": "2026-10-29T10:37:09+00:00",
  "kill": null,
  "rules": [
-  "stocks: exit/trim to dial 0.75 (dial 0 = flatten all stock names)",
-  "crypto: exit/trim to dial 0.66 x momentum targets (current target {'CASH': 1.0})",
-  "memes: dial 0.75; exit any meme when 1h volume < 25% of its 24h hourly average (no meme positions held - FOMO not connected)"
+  "stocks: exit/trim to dial 0.5 (dial 0 = flatten all stock names)",
+  "crypto: exit/trim to dial 0.33 x momentum targets (current target {'CASH': 1.0})",
+  "memes: dial 0.5; exit any meme when 1h volume < 25% of its 24h hourly average (no meme positions held - FOMO not connected)"
  ],
  "account": {
   "equity": 100000.0,
