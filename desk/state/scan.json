@@ -1,51 +1,18 @@
 {
- "generated_utc": "2026-10-29T10:35:26+00:00",
+ "generated_utc": "2026-10-30T10:36:16+00:00",
  "meme_dial": 0.5,
  "api_calls": 8,
- "pools_seen": 120,
+ "pools_seen": 100,
  "oldest_pool_age_h": {
   "solana": 0.1,
-  "bsc": 0.8
+  "bsc": 0.2
  },
  "errors": [
   "bsc p1: curl: (22) The requested URL returned error: 429",
+  "bsc p2: curl: (22) The requested URL returned error: 429",
   "bsc p4: curl: (22) The requested URL returned error: 429"
  ],
- "candidates": [
-  {
-   "network": "bsc",
-   "pool": "0x47462f24802706c99e641692450a5425448af7d0",
-   "name": "\ud83c\udf54SUPE / WBNB",
-   "dex": "pancakeswap_v2",
-   "age_h": 0.34,
-   "liquidity_usd": 109830,
-   "vol24_usd": 135712,
-   "mcap_usd": 534309,
-   "mcap_source": "fdv (mcap null)",
-   "h1_buys": 289,
-   "h1_sells": 232,
-   "buyer_growth": 6.0,
-   "txn_growth": 6.0,
-   "url": "https://www.geckoterminal.com/bsc/pools/0x47462f24802706c99e641692450a5425448af7d0"
-  }
- ],
- "handed_on": [
-  {
-   "network": "bsc",
-   "pool": "0x47462f24802706c99e641692450a5425448af7d0",
-   "name": "\ud83c\udf54SUPE / WBNB",
-   "dex": "pancakeswap_v2",
-   "age_h": 0.34,
-   "liquidity_usd": 109830,
-   "vol24_usd": 135712,
-   "mcap_usd": 534309,
-   "mcap_source": "fdv (mcap null)",
-   "h1_buys": 289,
-   "h1_sells": 232,
-   "buyer_growth": 6.0,
-   "txn_growth": 6.0,
-   "url": "https://www.geckoterminal.com/bsc/pools/0x47462f24802706c99e641692450a5425448af7d0"
-  }
- ],
+ "candidates": [],
+ "handed_on": [],
  "note": "handed to judge; coverage limited to the newest ~80 pools per chain (GeckoTerminal new_pools pages 1-4)"
 }
