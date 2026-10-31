@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-10-30T10:36:16+00:00",
+ "generated_utc": "2026-10-31T15:35:28+00:00",
  "engine": "PLACEHOLDER rule-based (Jev NOT CONNECTED)",
  "rules": "buyer_growth>=1.5, liquidity>=10% of mcap, 1h buys>sells; best buyer_growth wins",
  "considered": 0,

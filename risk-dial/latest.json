@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-10-30T10:32:26+00:00",
+  "generated_utc": "2026-10-31T15:31:47+00:00",
   "inputs": {
     "liquidity": {
       "green": false,
@@ -10,63 +10,63 @@
     },
     "volatility": {
       "green": true,
-      "vix": 16.91,
-      "as_of": "2026-10-28",
+      "vix": 17.2,
+      "as_of": "2026-10-29",
       "degraded": false
     },
     "credit": {
       "green": false,
-      "hy_oas": 3.14,
+      "hy_oas": 3.26,
       "chg_4w": 0.02,
-      "as_of": "2026-10-28",
+      "as_of": "2026-10-29",
       "degraded": false
     },
     "btc": {
       "green": true,
-      "close": 77370.64,
-      "sma200": 73120.96,
-      "as_of": "2026-10-30",
+      "close": 77398.94,
+      "sma200": 73135.73,
+      "as_of": "2026-10-31",
       "source": "coingecko"
     },
     "sol": {
       "green": false,
-      "close": 96.74,
-      "sma50": 109.25,
-      "as_of": "2026-10-30",
+      "close": 95.91,
+      "sma50": 109.11,
+      "as_of": "2026-10-31",
       "source": "coingecko"
     },
     "nasdaq": {
       "green": true,
-      "close": 715.34,
-      "sma200": 679.16,
-      "as_of": "2026-10-29",
+      "close": 690.49,
+      "sma200": 679.52,
+      "as_of": "2026-10-30",
       "source": "nasdaq.com"
     }
   },
   "fred": {
     "WALCL": {
       "last_date": "2026-10-28",
-      "age_hours": 58.5,
+      "age_hours": 87.5,
       "degraded": false
     },
     "WTREGEN": {
       "last_date": "2026-10-28",
-      "age_hours": 58.5,
+      "age_hours": 87.5,
       "degraded": false
     },
     "RRPONTSYD": {
-      "last_date": "2026-10-29",
-      "age_hours": 34.5,
+      "last_date": "2026-10-30",
+      "age_hours": 39.5,
       "degraded": false
     },
     "VIXCLS": {
-      "last_date": "2026-10-28",
-      "age_hours": 58.5,
+      "last_date": "2026-10-29",
+      "age_hours": 63.5,
       "degraded": false
     },
     "BAMLH0A0HYM2": {
-      "last_date": "2026-10-28",
-      "age_hours": 58.5,
+      "last_date": "2026-10-29",
+      "age_hours": 63.5,
       "degraded": false
     }
   },
@@ -103,9 +103,9 @@
   },
   "momentum_12_1": {
     "returns": {
-      "BTC": -0.2285,
-      "ETH": -0.2957,
-      "SOL": -0.3545
+      "BTC": -0.2372,
+      "ETH": -0.3021,
+      "SOL": -0.3693
     },
     "allocation": {
       "CASH": 1.0
